@@ -5,6 +5,8 @@ A VT100/ANSI serial terminal for a 65C02 single-board computer, built on the ESP
 on the 2.8" screen, and takes keys from a USB keyboard through a CH9350 module, or from a Bluetooth
 keyboard.
 
+![The CYD terminal running OS-65D, showing a disk directory](images/cyd_vt100.jpg)
+
 - VT100/ANSI display: cursor movement, clearing the screen and lines, inserting and deleting lines,
   scroll regions, colours, bold, underline and reverse video
 - USB keyboard via a CH9350L module (one wire to the CYD), or a Bluetooth keyboard via Bluepad32
@@ -88,3 +90,6 @@ Caps Lock starts on (`CAPS_AT_START`). Held keys auto-repeat.
 CR LF BS TAB, ESC[ A B C D H f G d J K L M P @ X m r s u n c, ?25h/l (cursor),
 ?7h/l (autowrap), ESC 7 8 D E M c Z, SGR colours 30–37/40–47, bold, underline, reverse.
 ESC[6n gets a cursor-position report back to the SBC.
+
+## Licence
+MIT. See [LICENSE](LICENSE).
